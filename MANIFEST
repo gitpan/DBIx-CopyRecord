@@ -4,7 +4,7 @@ LICENSE
 Todo
 Changes
 Makefile.PL
-lib/CopyRecord.pm
+CopyRecord.pm
 t/001_load.t
 t/002_MySQL.t
 META.yml                                 Module meta-data (added by MakeMaker)

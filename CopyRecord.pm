@@ -7,7 +7,7 @@ BEGIN {
     use Carp;
     use Exporter ();
     use vars qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS $PACKAGE);
-    $VERSION     = '0.002';
+    $VERSION     = '0.003';
     @ISA         = qw(Exporter);
     @EXPORT      = qw();
     @EXPORT_OK   = qw();
