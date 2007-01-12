@@ -2,10 +2,9 @@ MANIFEST
 README
 LICENSE
 Todo
-Changes
 Makefile.PL
 CopyRecord.pm
 t/001_load.t
 t/002_MySQL.t
+t/003_Pg.t
 META.yml                                 Module meta-data (added by MakeMaker)
-INSTALL
