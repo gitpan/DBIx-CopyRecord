@@ -1,4 +1,4 @@
-package DBIX::CopyRecord;
+package DBIx::CopyRecord;
 
 use strict;
 use DBI;
@@ -7,14 +7,14 @@ BEGIN {
     use Carp;
     use Exporter ();
     use vars qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS $PACKAGE);
-    $VERSION     = '0.004';
+    $VERSION     = '0.005';
     @ISA         = qw(Exporter);
     @EXPORT      = qw();
     @EXPORT_OK   = qw();
     %EXPORT_TAGS = ();
 
     $Carp::CarpLevel = 1;
-    $PACKAGE = "DBIX::CopyRecord";
+    $PACKAGE = "DBIx::CopyRecord";
 
     #debug constant
     use constant DEBUG => 0;
