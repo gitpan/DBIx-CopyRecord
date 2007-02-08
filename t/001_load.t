@@ -1,10 +1,10 @@
 
 use Test::More tests => 2;
 
-BEGIN { use_ok( 'CopyRecord' ); }
+BEGIN { use_ok( 'DBIx::CopyRecord' ); }
 
 my $dbh;
-my $object = CopyRecord->new ( \$dbh);
-isa_ok ($object, 'CopyRecord');
+my $object = DBIx::CopyRecord->new ( \$dbh);
+isa_ok ($object, 'DBIx::CopyRecord');
 
 

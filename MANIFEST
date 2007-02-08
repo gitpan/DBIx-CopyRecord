@@ -3,4 +3,5 @@ README
 Makefile.PL
 CopyRecord.pm
 t/001_load.t
+sample.pl
 META.yml                                 Module meta-data (added by MakeMaker)
