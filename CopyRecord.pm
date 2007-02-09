@@ -7,7 +7,7 @@ BEGIN {
     use Carp;
     use Exporter ();
     use vars qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS $PACKAGE);
-    $VERSION     = '0.006';
+    $VERSION     = '0.007';
     @ISA         = qw(Exporter);
     @EXPORT      = qw();
     @EXPORT_OK   = qw();
@@ -45,7 +45,7 @@ sub DESTROY () {
 
 =head1 NAME
 
- DBIx::CopyRecord 
+ DBIx::CopyRecord - module for copying record(s) in database within same table including all related ehild table(s); 
 
 =head1 SYNOPSIS
 
