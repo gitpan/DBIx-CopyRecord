@@ -9,6 +9,7 @@ WriteMakefile(
     AUTHOR       => 'Jack Bilemjian (jck000@gmail.com)',
     ABSTRACT     => 'Copy Records within a database',
     PREREQ_PM    => {
+                     'DBI' => 1.40,
                      'Test::Simple' => 0.44,
                     },
 );
