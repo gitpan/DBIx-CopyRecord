@@ -6,12 +6,8 @@ use DBI;
 BEGIN {
     use Carp;
     use Exporter ();
-    use vars qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS $PACKAGE $AUTOLOAD);
-    $VERSION     = '1.0';
-    @ISA         = qw(Exporter);
-    @EXPORT      = qw();
-    @EXPORT_OK   = qw();
-    %EXPORT_TAGS = ();
+    use vars qw($VERSION $PACKAGE $AUTOLOAD);
+    $VERSION     = '1.01';
 
     $Carp::CarpLevel = 1;
     $PACKAGE         = "DBIx::CopyRecord";
@@ -45,16 +41,14 @@ sub DESTROY () {
 
 =head1 NAME
 
- DBIx::CopyRecord - copying record sets within a database while maintaining referential integrity.
+ DBIx::CopyRecord - copy record(s) while maintaining referential integrity within a database.
 
 =head1 DESCRIPTION
 
- This module can copy record(s) in a database whild maintaining referential 
- integrity.  The C<copy> method is all that's needed.  It's useful for copying
- related record(s) and assigning a new key value to the new record(s).  All
- while maintaining referential integrity.  
+ This module can copy record(s) while maintaining referential integrity within a database.  The C<copy> method is all that's needed.  It's useful for copying
+ related record(s) and assigning a new key value to the new record(s).  
 
- You can specify all of the relationships in the copy command, for example, if your DB is not using foreign keys.  Or, simply tell the method what the name of the foreign key is and the module will do the rest.
+ You can define all of the relationships in the arguments to the copy command.  For example, if your DB is not using foreign keys.  Or, simply tell the method what the name of the foreign key is and the module will do the rest.
 
 The copy method will return the assigned key value so that you can use it.
 

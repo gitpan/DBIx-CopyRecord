@@ -7,7 +7,7 @@ WriteMakefile(
     NAME         => 'DBIx::CopyRecord',
     VERSION_FROM => 'CopyRecord.pm', # finds \$VERSION
     AUTHOR       => 'Jack Bilemjian (jck000@gmail.com)',
-    ABSTRACT     => 'Copy Records within a database',
+    ABSTRACT     => 'Copy Records while maintaining referential integrity within a database.',
     PREREQ_PM    => {
                      'DBI' => 1.40,
                      'Test::Simple' => 0.44,

@@ -4,4 +4,5 @@ Makefile.PL
 CopyRecord.pm
 t/001_load.t
 sample.pl
+test_schema.sql
 META.yml                                 Module meta-data (added by MakeMaker)
